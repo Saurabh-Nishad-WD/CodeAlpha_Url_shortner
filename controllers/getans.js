@@ -8,7 +8,8 @@ const getShortenedId = async (req,res) =>{
             return res.status(404).send({ message: "URL not found" });
         }
        res.redirect(gettingURL.redirectURL);
-  
+
+        
     }
     catch(err){
         console.log(err);
